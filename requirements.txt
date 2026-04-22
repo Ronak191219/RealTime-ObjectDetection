@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════════════════════════════
+#  Real-Time Object Detection System — Python Dependencies
+#  WebRTC-based browser camera permissions + live preview
+#
+#  Install:  pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════════════
+
+streamlit>=1.32.0          # UI framework
+ultralytics>=8.2.0         # YOLOv8 model + inference
+opencv-python>=4.9.0.80    # Webcam capture, frame drawing
+numpy>=1.26.0              # Numerical arrays
+Pillow>=10.3.0             # Image loading (file uploader)
+streamlit-webrtc>=0.64.5   # Browser camera permission + live stream
+av>=16.1.0                 # WebRTC video frame transport
+
+# PyTorch is auto-installed by ultralytics (CPU build)
+# For NVIDIA GPU acceleration, uncomment the lines below INSTEAD:
+# --index-url https://download.pytorch.org/whl/cu121
+# torch>=2.2.0+cu121
+# torchvision>=0.17.0+cu121
