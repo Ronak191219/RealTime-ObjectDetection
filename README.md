@@ -58,7 +58,7 @@ Real-Time-Object-Detection/
 - Python 3.10+
 - Webcam (for live detection)
 
-### Steps
+### Legacy Streamlit App
 
 ```bash
 # 1. Clone the repository
@@ -82,6 +82,44 @@ streamlit run app.py
 ```
 
 > **Note:** YOLOv8 model weights (~6 MB) are auto-downloaded from Ultralytics on first run.
+
+### Current Refactored App: Run Frontend and Backend Separately
+
+The project now also includes a refactored setup with:
+
+- `frontend/` → React + Vite
+- `backend/` → FastAPI + YOLOv8
+
+Run them in two terminals from the project root:
+
+```powershell
+# Terminal 1
+cd backend
+npm run setup
+npm run dev
+```
+
+```powershell
+# Terminal 2
+cd frontend
+npm run dev
+```
+
+Then open `http://localhost:5173`.
+
+Before the first run, install dependencies once:
+
+```powershell
+# Python deps
+cd backend
+npm run setup
+
+# Node deps
+cd ..\frontend
+npm install
+```
+
+The backend scripts use the repo's `venv`, which avoids mixing global Python packages with project packages.
 
 ---
 

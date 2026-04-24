@@ -1,0 +1,9 @@
+{
+  "name": "object-detection-backend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "..\\venv\\Scripts\\python.exe -m pip install -r requirements.txt",
+    "dev": "..\\venv\\Scripts\\python.exe -m uvicorn main:app --reload --port 8000"
+  }
+}
