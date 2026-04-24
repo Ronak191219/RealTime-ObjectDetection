@@ -1,24 +1,48 @@
-# Python
-__pycache__/
-*.pyc
-
-# Virtual Environment
+# ── Virtual Environment ──────────────────────────────
 venv/
 env/
+.env/
+.venv/
 
-# Logs
+# ── Python Cache ─────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── YOLOv8 Model Weights (auto-downloaded, no need to push) ──
+*.pt
+*.onnx
+*.torchscript
+runs/
+
+# ── App Generated Files ──────────────────────────────
+screenshots/
 logs/
-*.log
+camera_name.txt
 
-# OS files
+# ── Ultralytics Cache ────────────────────────────────
+.ultralytics/
+
+# ── OS Files ─────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Model files (optional - if large)
-*.pt
-
-# Screenshots (optional)
-screenshots/
-
-# VS Code
+# ── VS Code ──────────────────────────────────────────
 .vscode/
+
+# ── Jupyter ──────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Streamlit ────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Misc ─────────────────────────────────────────────
+*.log
+*.tmp
+dist/
+build/
+*.egg-info/
